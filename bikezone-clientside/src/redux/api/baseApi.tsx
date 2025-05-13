@@ -12,8 +12,8 @@ import { RootState } from "../store";
 
 const baseQuery = fetchBaseQuery({
   baseUrl:
-    // "https://bikezone-serverside-seven.vercel.app/api",
-    "http://localhost:5000/api",
+    "https://bikezone-serverside-seven.vercel.app/api",
+    // "http://localhost:5000/api",
   credentials: "include",
   prepareHeaders: (headers, { getState }) => {
     const token = (getState() as RootState).auth?.token;
